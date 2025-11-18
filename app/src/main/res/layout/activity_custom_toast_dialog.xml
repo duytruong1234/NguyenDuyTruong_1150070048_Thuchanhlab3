@@ -5,9 +5,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@android:color/white"
+    android:fitsSystemWindows="true"
     tools:context=".CustomToastDialogActivity">
 
-    <!-- Header -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +19,6 @@
         android:padding="14dp"
         android:background="#5E35B1"/>
 
-    <!-- Main Content with 2 Columns (like Bai tap 1) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -28,7 +27,6 @@
         android:background="@android:color/white"
         android:padding="16dp">
 
-        <!-- Left Column: Selectors -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -45,30 +43,15 @@
                 android:gravity="center"
                 android:layout_marginBottom="16dp"/>
 
-            <View
-                android:layout_width="130dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center_horizontal"
-                android:background="#00BCD4"
-                android:layout_marginBottom="8dp"/>
-
-            <View
-                android:layout_width="130dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center_horizontal"
-                android:background="#FFEB3B"
-                android:layout_marginBottom="8dp"/>
-
-            <View
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_gravity="center_horizontal"
-                android:background="#03A9F4"
-                android:layout_marginTop="8dp"/>
+            <LinearLayout
+                android:id="@+id/layoutSelectors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"/>
 
         </LinearLayout>
 
-        <!-- Right Column: Shapes/Selectors -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -85,26 +68,12 @@
                 android:gravity="center"
                 android:layout_marginBottom="16dp"/>
 
-            <View
-                android:layout_width="130dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center_horizontal"
-                android:background="#E0E0E0"
-                android:layout_marginBottom="8dp"/>
-
-            <View
-                android:layout_width="130dp"
-                android:layout_height="45dp"
-                android:layout_gravity="center_horizontal"
-                android:background="#D32F2F"
-                android:layout_marginBottom="8dp"/>
-
-            <View
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_gravity="center_horizontal"
-                android:background="#FF9800"
-                android:layout_marginTop="8dp"/>
+            <LinearLayout
+                android:id="@+id/layoutShapes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"/>
 
         </LinearLayout>
 
@@ -150,8 +119,6 @@
         </LinearLayout>
 
 
-
     </LinearLayout>
 
 </LinearLayout>
-

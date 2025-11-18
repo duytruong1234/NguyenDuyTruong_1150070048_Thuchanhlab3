@@ -4,10 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     android:background="@android:color/white"
     tools:context=".ColorChooserActivity">
-
-    <!-- Header -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,8 +17,6 @@
         android:background="#5E35B1"
         android:gravity="center"
         android:padding="16dp"/>
-
-    <!-- RGB Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -95,8 +92,6 @@
             android:background="#00FF00"/>
 
     </LinearLayout>
-
-    <!-- Divider -->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"

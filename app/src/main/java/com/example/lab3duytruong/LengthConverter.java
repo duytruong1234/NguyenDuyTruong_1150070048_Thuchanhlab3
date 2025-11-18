@@ -16,8 +16,6 @@ public class LengthConverter {
         conversionTable.put("Foot", 0.3048);
         conversionTable.put("Inch", 0.0254);
     }
-
-
     public static double convert(double value, String fromUnit, String toUnit) {
         if (!conversionTable.containsKey(fromUnit) || !conversionTable.containsKey(toUnit)) {
             throw new IllegalArgumentException("Đơn vị không hợp lệ");
@@ -33,7 +31,6 @@ public class LengthConverter {
         for (String unit : conversionTable.keySet()) {
             results.put(unit, convert(value, fromUnit, unit));
         }
-
         return results;
     }
     public static String[] getAllUnits() {

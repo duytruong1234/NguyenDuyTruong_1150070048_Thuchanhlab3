@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab3duytruong">
         <activity
-            android:name=".CustomToastDialogActivity"
+            android:name=".DishManagementActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,16 +20,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".DishManagementActivity"
-            android:exported="false"
-            android:label=" Quản lý món ăn" />
-
 
         <activity
-            android:name=".ColorChooserActivity"
-            android:exported="false"
-            android:label="Bài tập 4 - Color Chooser" />
+            android:name=".CustomButtonActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CustomToastDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GridViewContributorsActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

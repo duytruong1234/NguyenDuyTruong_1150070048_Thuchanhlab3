@@ -9,10 +9,8 @@ import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CustomButtonActivity extends AppCompatActivity {
-
     private LinearLayout layoutSelectors;
     private LinearLayout layoutShapes;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +21,6 @@ public class CustomButtonActivity extends AppCompatActivity {
         createSelectorButtons();
         createShapeButtons();
     }
-
     private void createSelectorButtons() {
         int buttonWidth = (int) (160 * getResources().getDisplayMetrics().density);
         int buttonHeight = (int) (55 * getResources().getDisplayMetrics().density);
@@ -40,8 +37,6 @@ public class CustomButtonActivity extends AppCompatActivity {
         btn1.setLayoutParams(params1);
         btn1.setPadding(16, 16, 16, 16);
         layoutSelectors.addView(btn1);
-
-        // Button 2: Yellow rectangle
         Button btn2 = new Button(this);
         btn2.setText("RECTANGLE");
         btn2.setBackgroundResource(R.drawable.button_selector_yellow);
@@ -56,7 +51,6 @@ public class CustomButtonActivity extends AppCompatActivity {
         btn2.setPadding(16, 16, 16, 16);
         layoutSelectors.addView(btn2);
 
-        // Button 3: Circle with star icon
         Button btn3 = new Button(this);
         btn3.setText("⭐");
         btn3.setTextSize(32);
@@ -69,12 +63,10 @@ public class CustomButtonActivity extends AppCompatActivity {
         btn3.setLayoutParams(params3);
         layoutSelectors.addView(btn3);
     }
-
     private void createShapeButtons() {
         int buttonWidth = (int) (150 * getResources().getDisplayMetrics().density);
         int buttonHeight = (int) (55 * getResources().getDisplayMetrics().density);
 
-        // Button 1: White with black border - "ROUNDED SHAPE"
         Button btnShape1 = new Button(this);
         btnShape1.setText("ROUNDED SHAPE");
         btnShape1.setBackgroundResource(R.drawable.button_shape_rounded_border);
@@ -114,4 +106,3 @@ public class CustomButtonActivity extends AppCompatActivity {
         layoutShapes.addView(btnShape3);
     }
 }
-

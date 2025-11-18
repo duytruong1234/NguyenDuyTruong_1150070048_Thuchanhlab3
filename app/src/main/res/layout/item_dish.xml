@@ -3,10 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+    android:fitsSystemWindows="true"
     android:padding="12dp"
     android:background="#000000">
 
-    <!-- Dish Image -->
     <ImageView
         android:id="@+id/imgDish"
         android:layout_width="80dp"
@@ -14,7 +14,6 @@
         android:scaleType="centerCrop"
         android:contentDescription="Dish Image" />
 
-    <!-- Dish Information -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -81,4 +80,3 @@
     </LinearLayout>
 
 </LinearLayout>
-

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Padding and Margins -->
     <dimen name="padding_small">8dp</dimen>
     <dimen name="padding_medium">12dp</dimen>
     <dimen name="padding_large">16dp</dimen>
@@ -10,18 +9,15 @@
     <dimen name="margin_medium">12dp</dimen>
     <dimen name="margin_large">16dp</dimen>
 
-    <!-- Text Sizes -->
     <dimen name="text_size_title">24sp</dimen>
     <dimen name="text_size_subtitle">18sp</dimen>
     <dimen name="text_size_normal">16sp</dimen>
     <dimen name="text_size_small">14sp</dimen>
 
-    <!-- Elevation -->
     <dimen name="elevation_low">2dp</dimen>
     <dimen name="elevation_medium">4dp</dimen>
     <dimen name="elevation_high">8dp</dimen>
 
-    <!-- Corner Radius -->
     <dimen name="corner_radius_small">4dp</dimen>
     <dimen name="corner_radius_medium">8dp</dimen>
 </resources>

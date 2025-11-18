@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#000000">
+    android:background="#000000"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#5E35B1"
+        android:elevation="4dp"
+        app:titleTextColor="@android:color/white"
+        app:title="Quản Lý Món Ăn">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal"
+            android:layout_marginEnd="8dp">
+
+            <ImageButton
+                android:id="@+id/btnAddDish"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_input_add"
+                app:tint="@android:color/white"
+                android:contentDescription="Thêm món ăn" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
 
     <ListView
         android:id="@+id/listViewDishes"
