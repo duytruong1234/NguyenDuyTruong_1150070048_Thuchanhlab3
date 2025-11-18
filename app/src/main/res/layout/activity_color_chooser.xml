@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".ColorChooserActivity">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ChooseColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="#5E35B1"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <!-- RGB Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvRValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R = 0"
+            android:textSize="16sp"
+            android:textColor="#E91E63"
+            android:layout_marginBottom="8dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:progressTint="#E91E63"
+            android:thumbTint="#E91E63"/>
+
+        <TextView
+            android:id="@+id/tvGValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G = 100"
+            android:textSize="16sp"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="8dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:progressTint="#4CAF50"
+            android:thumbTint="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/tvBValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B = 16"
+            android:textSize="16sp"
+            android:textColor="#2196F3"
+            android:layout_marginBottom="8dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:progressTint="#2196F3"
+            android:thumbTint="#2196F3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RGB"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <View
+            android:id="@+id/viewRGB"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#00FF00"/>
+
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvCValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C = 0"
+            android:textSize="16sp"
+            android:textColor="#00BCD4"
+            android:layout_marginBottom="8dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:progressTint="#00BCD4"
+            android:thumbTint="#00BCD4" />
+
+        <TextView
+            android:id="@+id/tvMValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M = 0"
+            android:textSize="16sp"
+            android:textColor="#E91E63"
+            android:layout_marginBottom="8dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:progressTint="#E91E63"
+            android:thumbTint="#E91E63"/>
+
+        <TextView
+            android:id="@+id/tvYValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y = 0"
+            android:textSize="16sp"
+            android:textColor="#FFEB3B"
+            android:layout_marginBottom="8dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:progressTint="#FFEB3B"
+            android:thumbTint="#FFEB3B"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CMY"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <View
+            android:id="@+id/viewCMY"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#FF00FF"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

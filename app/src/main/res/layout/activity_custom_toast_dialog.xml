@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".CustomToastDialogActivity">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Button"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:padding="14dp"
+        android:background="#5E35B1"/>
+
+    <!-- Main Content with 2 Columns (like Bai tap 1) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <!-- Left Column: Selectors -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selectors"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <View
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#00BCD4"
+                android:layout_marginBottom="8dp"/>
+
+            <View
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFEB3B"
+                android:layout_marginBottom="8dp"/>
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#03A9F4"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Right Column: Shapes/Selectors -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shapes/Selectors"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <View
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#E0E0E0"
+                android:layout_marginBottom="8dp"/>
+
+            <View
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#D32F2F"
+                android:layout_marginBottom="8dp"/>
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#FF9800"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#5E35B1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/btnShowToast"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="TOAST"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:background="@drawable/button_blue_rounded"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnShowDialog"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="DIALOG"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:background="@drawable/button_blue_rounded"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

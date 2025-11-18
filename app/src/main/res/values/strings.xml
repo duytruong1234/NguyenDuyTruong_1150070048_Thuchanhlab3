@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Đổi đơn vị độ chiều dài</string>
+    <string name="title_converter">Đổi đơn vị độ chiều dài</string>
+    <string name="hint_input_value">Nhập giá trị</string>
+    <string name="label_equivalent">Tương đương với</string>
+    <string name="label_value_to_convert">Giá trị cần chuyển đổi</string>
+    <string name="label_unit">Đơn vị</string>
+    <string name="error_invalid_unit">Đơn vị không hợp lệ</string>
+    <string name="error_invalid_input">Vui lòng nhập giá trị hợp lệ</string>
+    <string name="sample_unit">Met</string>
+    <string name="sample_value">1000.0</string>
+
+    <string-array name="length_units">
+        <item>Hải lý</item>
+        <item>Dặm</item>
+        <item>Km</item>
+        <item>Lý</item>
+        <item>Met</item>
+        <item>Yard</item>
+        <item>Foot</item>
+        <item>Inch</item>
+    </string-array>
+</resources>

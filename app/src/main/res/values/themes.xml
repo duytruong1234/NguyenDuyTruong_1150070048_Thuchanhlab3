@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Lab3duytruong" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.Lab3duytruong" parent="Base.Theme.Lab3duytruong" />
+</resources>

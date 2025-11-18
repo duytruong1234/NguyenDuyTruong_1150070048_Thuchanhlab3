@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_medium"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tvUnitName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/sample_unit"
+        android:textSize="@dimen/text_size_normal"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        tools:text="Met"/>
+
+    <TextView
+        android:id="@+id/tvUnitValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/sample_value"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/text_secondary"
+        android:gravity="end"
+        tools:text="1000.0"/>
+
+</LinearLayout>
+
